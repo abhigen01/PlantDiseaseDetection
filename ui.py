@@ -226,7 +226,7 @@ def openphoto():
     for fileName in fileList:
         os.remove(dirPath + "/" + fileName)
     # C:/Users/sagpa/Downloads/images is the location of the image which you want to test..... you can change it according to the image location you have  
-    fileName = askopenfilename(initialdir='C:/Users/sagpa/Downloads/images', title='Select image for analysis ',
+    fileName = askopenfilename(initialdir='C:\Users\dell\Downloads\PlantDiseaseDetection-67ad68ed0161c1031cc0d4b8e3b47709312a11e3\PlantDiseaseDetection-67ad68ed0161c1031cc0d4b8e3b47709312a11e3\testpicture', title='Select image for analysis ',
                            filetypes=[('image files', '.jpg')])
     dst = "C:/Users/sagpa/Desktop/plant_project/testpicture"
     shutil.copy(fileName, dst)
